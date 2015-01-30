@@ -10,7 +10,7 @@ function upgrade_oh_my_zsh() {
   env ZSH=$ZSH /bin/sh $ZSH/tools/upgrade.sh
 }
 
-function take() {
+function mcd() {
   mkdir -p $1
   cd $1
 }
@@ -72,4 +72,26 @@ function default() {
 function env_default() {
     env | grep -q "^$1=" && return 0 
     export "$1=$2"       && return 3
+}
+
+
+function gocurt(){
+  cd ~/code/go/golibs/src/github.com/curt-labs
+  cd $1
+}
+
+function goaries(){
+  cd ~/code/go/golibs/src/github.com/aries-auto/$1
+}
+
+function goninn(){
+  cd ~/code/go/golibs/src/github.com/ninnemana/$1
+}
+
+function jscurt(){
+  cd ~/code/js/curt-labs/$1
+}
+
+function jsaries(){
+  cd ~/code/js/aries-auto/$1
 }
