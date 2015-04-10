@@ -81,17 +81,21 @@ function gocurt(){
 }
 
 function goaries(){
-  cd ~/code/go/golibs/src/github.com/aries-auto/$1
+  cd ~/code/go/golibs/src/github.com/aries-auto
+  cd $1
 }
 
 function goninn(){
-  cd ~/code/go/golibs/src/github.com/ninnemana/$1
+  cd ~/code/go/golibs/src/github.com/ninnemana
+  cd $1
 }
 
 function jscurt(){
-  cd ~/code/js/curt-labs/$1
+  cd ~/code/js/curt-labs
+  cd $1
 }
 
 function jsaries(){
-  cd ~/code/js/aries-auto/$1
+  cd ~/code/js/aries-auto
+  cd $1
 }
